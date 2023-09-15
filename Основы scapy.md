@@ -6,6 +6,8 @@ from scapy.all import *
 from scapy.layers.inet import IP, UDP
 from scapy.layers.l2 import Ether, MPacketPreamble
 ```
+Убрать scapy WARNING message:
+`logging.getLogger("scapy.runtime").setLevel(logging.ERROR)`
 
 ### Создание пакета:
 `b = IP(ttl=10)`
